@@ -4,12 +4,12 @@ import 'package:pertemuan5/models/news_detail.dart';
 class NewsDetailScreen extends StatefulWidget {
   const NewsDetailScreen(
       {super.key,
-      required this.newsId,
-      required this.newsTitle,
-      required this.newsContent});
-  final String newsId;
-  final String newsTitle;
-  final String newsContent;
+      required this.id,
+      required this.title,
+      required this.content});
+  final String id;
+  final String title;
+  final String content;
 
   @override
   State<NewsDetailScreen> createState() => _NewsDetailScreenState();

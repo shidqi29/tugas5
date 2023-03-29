@@ -29,9 +29,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Column(
         children: [
-          // SizedBox(
-          // height: MediaQuery.of(context).padding.top,
-          // ),
+          SizedBox(
+            height: MediaQuery.of(context).padding.top,
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 16,

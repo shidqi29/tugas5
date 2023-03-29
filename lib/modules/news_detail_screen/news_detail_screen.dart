@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import '';
+import 'package:pertemuan5/models/news_detail.dart';
 
 class NewsDetailScreen extends StatefulWidget {
   const NewsDetailScreen(
       {super.key,
-      required this.id,
-      required this.title,
-      required this.content});
-  final String id;
-  final String title;
-  final String content;
+      required this.newsId,
+      required this.newsTitle,
+      required this.newsContent});
+  final String newsId;
+  final String newsTitle;
+  final String newsContent;
 
   @override
   State<NewsDetailScreen> createState() => _NewsDetailScreenState();

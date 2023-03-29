@@ -1,27 +1,27 @@
 class NewsDetail {
-  final int id;
-  final String title;
-  final String content;
+  final int newsId;
+  final String newsTitle;
+  final String newsContent;
 
   NewsDetail({
-    required this.id,
-    required this.title,
-    required this.content,
+    required this.newsId,
+    required this.newsTitle,
+    required this.newsContent,
   });
 
   factory NewsDetail.fromMap(Map<String, dynamic> map) {
     return NewsDetail(
-      id: map["id"],
-      title: map["title"],
-      content: map["content"],
+      newsId: map["newsId"],
+      newsTitle: map["newsTitle"],
+      newsContent: map["newsContent"],
     );
   }
 
   factory NewsDetail.dummy() {
     return NewsDetail(
-      id: 1,
-      title: "Legenda Situ Bagendit",
-      content: "Amet dolore ea ullamco labore et ullamco nisi aliqua ad aliquip. Excepteur eiusmod fugiat ut amet sint aliqua mollit dolor cillum anim fugiat dolore. Mollit aliqua esse est exercitation tempor. Anim quis ipsum esse do consectetur laboris minim fugiat enim fugiat proident irure est. Dolore velit ex quis proident sint anim commodo et cupidatat consequat nulla amet. Aliquip fugiat dolor anim pariatur enim ad sunt dolor eu culpa reprehenderit tempor dolore. Proident consectetur officia in exercitation in.",
+      newsId: 1,
+      newsTitle: "Legenda Situ Bagendit",
+      newsContent: "Amet dolore ea ullamco labore et ullamco nisi aliqua ad aliquip. Excepteur eiusmod fugiat ut amet sint aliqua mollit dolor cillum anim fugiat dolore. Mollit aliqua esse est exercitation tempor. Anim quis ipsum esse do consectetur laboris minim fugiat enim fugiat proident irure est. Dolore velit ex quis proident sint anim commodo et cupidatat consequat nulla amet. Aliquip fugiat dolor anim pariatur enim ad sunt dolor eu culpa reprehenderit tempor dolore. Proident consectetur officia in exercitation in.",
     );
   }
 }

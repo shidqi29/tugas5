@@ -44,9 +44,9 @@ class AppRoutes {
   ) {
     return MaterialPage(
       child: NewsDetailScreen(
-        id: state.params["id"]!,
-        content: '',
-        title: '',
+        newsId: state.params["id"]!,
+        newsContent: '',
+        newsTitle: '',
       ),
     );
   }

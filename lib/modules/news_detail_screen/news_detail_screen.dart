@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import '';
 
 class NewsDetailScreen extends StatefulWidget {
@@ -17,30 +15,30 @@ class NewsDetailScreen extends StatefulWidget {
   State<NewsDetailScreen> createState() => _NewsDetailScreenState();
 }
 
-class _NewsDetailScreenState extends State<NewsDetailScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          widget.id,
-        ),
-      ),
-    );
-  }
-}
+// class _NewsDetailScreenState extends State<NewsDetailScreen> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: Center(
+//         child: Text(
+//           widget.id,
+//         ),
+//       ),
+//     );
+//   }
+// }
 
-class _newsDetailScreenState extends State<NewsDetailScreen> {
+class _NewsDetailScreenState extends State<NewsDetailScreen> {
   int likeCount = 0;
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text(
-      //     "Home Page",
-      //   ),
-      // ),
+      appBar: AppBar(
+        title: const Text(
+          "Lebaran",
+        ),
+      ),
       body: Column(
         children: [
           Image.network(

@@ -232,7 +232,7 @@ class LatestNewsIndexCardSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          for (int i = 1; i < 2; i++)
+          for (int i = 1; i < 3; i++)
             LatestNewsCard(
               size: size,
               i: i,

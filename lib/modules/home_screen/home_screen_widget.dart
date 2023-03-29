@@ -97,6 +97,7 @@ class HottestNewsCard extends StatelessWidget {
     required this.size,
     required this.pictureUrl,
     required this.newsTitle,
+    required Null Function() onTap,
   });
 
   final Size size;

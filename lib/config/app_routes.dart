@@ -9,6 +9,8 @@ class AppRoutes {
   static const String splash = "splash";
   static const String home = "home";
   static const String newsDetail = "news-detail";
+  static const String newsDetailHot = "news-detail-hot";
+
 
   static Page _splashScreenBuilder(BuildContext context, GoRouterState state) {
     return const MaterialPage(
@@ -50,6 +52,12 @@ class AppRoutes {
       ),
     );
   }
+  static Page _newsDetailScreenHotBuilder(BuildContext context,GoRouterState state,) 
+  {
+    return  const MaterialPage(
+      child: NewsDetailScreenHot(newsDetailHot: newsDetailHot),
+      );
+    }
 
   static final GoRouter goRouter = GoRouter(
     routes: [
@@ -69,6 +77,11 @@ class AppRoutes {
             pageBuilder: _newsDetailScreenBuilder,
           ),
         ],
+      ),
+      GoRoute(
+        name: newsDetailHot,
+        path: "/news-detail-hot",
+        pageBuilder: _newsDetailScreenHotBuilder,
       ),
     ],
     initialLocation: "/splash",

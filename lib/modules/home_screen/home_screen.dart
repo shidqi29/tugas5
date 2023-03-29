@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import '../../config/app_routes.dart';
 import '../../models/user.dart';
 import 'home_screen_widget.dart';
 
@@ -71,10 +73,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   padding: const EdgeInsets.symmetric(
                     horizontal: 16,
                   ),
-                  child: HottestNewsCard(
-                    size: size,
-                    pictureUrl: "https://picsum.photos/1080/690",
-                    newsTitle: "Lebaran Sebentar lagi",
+                  child: InkWell(
+                    onTap: () {
+                      GoRouter.of(context).goNamed(
+                        AppRoutes.newsDetailHot,
+                      );
+                    },
+                    child: HottestNewsCard(
+                      size: size,
+                      pictureUrl: "https://picsum.photos/1080/690",
+                      newsTitle:
+                          "Anim voluptate in aliquip magna duis exercitation.",
+                      onTap: () {},
+                    ),
                   ),
                 ),
                 const SizedBox(
